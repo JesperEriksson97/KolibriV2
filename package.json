@@ -1,0 +1,18 @@
+{
+  "name": "kolibri-v.2.0.0",
+  "version": "2.0.0",
+  "description": "2nd attempt on the Kolibri code sharing application",
+  "main": "app.js",
+  "scripts": {
+    "run": "nodemon app.js"
+  },
+  "author": "Jesper Eriksson",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-hbs": "^2.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
