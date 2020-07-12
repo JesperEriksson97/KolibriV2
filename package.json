@@ -9,8 +9,10 @@
   "author": "Jesper Eriksson",
   "license": "MIT",
   "dependencies": {
+    "ace-builds": "^1.4.12",
     "express": "^4.17.1",
-    "express-hbs": "^2.3.3"
+    "express-hbs": "^2.3.3",
+    "socket.io": "^2.3.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"

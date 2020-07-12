@@ -92,3 +92,24 @@ nav a:hover::before {
 nav a:hover::after {
   width: 100%;
 }
+
+#editor {
+  position: absolute;
+  top: 200;
+  right: 0;
+  bottom: 0;
+  left: 550;
+  width: 800px;
+  height: 600px;
+}
+
+#terminal {
+  position: absolute;
+  top: 800;
+  right: 0;
+  bottom: 0;
+  left: 550;
+  width: 800px;
+  height: 300px;
+  border: none;
+}
