@@ -1,11 +1,16 @@
 const roomController = {};
 
 roomController.createRoom = (req, res) => {
-    res.send('Hello from Create Room')
+    res.render('room/createRoom')
 }
 
 roomController.joinRoom = (req, res) => {
-    res.send('Hello from Join Room')
+    res.render('room/joinRoom')
+}
+
+roomController.renderJoinedRoom = (req, res) => {
+    res.send('It works')
+    console.log(req.body)
 }
 
 module.exports = roomController;
