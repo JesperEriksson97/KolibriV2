@@ -14,6 +14,7 @@ const server = http.createServer(app);
 app.use("/", require("./routes/homeRouter"));
 app.use("/contact", require("./routes/contactRouter"));
 app.use("/about", require("./routes/aboutRouter"));
+app.use("/room", require("./routes/roomRouter"))
 
 // View Engine
 app.use(express.urlencoded({ extended: false }));
