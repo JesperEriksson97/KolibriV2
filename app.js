@@ -8,7 +8,10 @@ const path = require("path");
 const hbs = require("express-hbs");
 
 const PORT = 3000 || process.env.PORT;
-const server = http.createServer(app);
+
+// Body Parser
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false}))
 
 // Routes
 app.use("/", require("./routes/homeRouter"));
@@ -29,6 +32,7 @@ app.engine(
   })
 );
 
+const server = http.createServer(app);
 server.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });

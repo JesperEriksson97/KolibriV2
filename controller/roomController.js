@@ -9,8 +9,8 @@ roomController.joinRoom = (req, res) => {
 }
 
 roomController.renderJoinedRoom = (req, res) => {
+    console.log(req.body)
     res.render('room/room') // Here we should also send the data from the mongoDB
-    console.log(req.params)
 }
 
 module.exports = roomController;
